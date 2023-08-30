@@ -4,10 +4,15 @@ labels: ["unconfirmed"]
 body:
   - type: markdown
     attributes:
-     value: "Hey there, thank you for taking the time to submit this issue! Please note that this tracker is only for bugs or other issues with the core project."
+     value: |
+       Hey, thank you for taking the time to submit this issue!
+
+       Please note that this tracker is only for bugs or other issues with the core project.
+       
+       
   - type: textarea
     attributes:
-      label: "The issue"
+      label: "Issue description"
       description: "Describe your issue in details here. If you can reproduce the issue deterministically, please write a step-by-step guide."
       placeholder: |      
         I tried to do X, but Y happened, and I expected Z. I think this is a bug.
@@ -47,8 +52,9 @@ body:
   - type: checkboxes
     attributes:
       label: "Required"
+      description: "Please make sure you agree with these statements:"
       options:
-        - label: "I have searched past issues to see if this bug has already been reported."
+        - label: "I have searched past issues to see if this bug has already been reported, and it hasn't been."
           required: true
-        - label: "I've done my very best to help anyone willing to volunteer their time to investigate this problem."
+        - label: "I understand that people give their precious time for free, and thus I've done my very best to make this problem as easy as possible to investigate."
           required: true
