@@ -21,13 +21,13 @@ body:
       required: true
   - type: input
     attributes:
-      label: "Qtile version"
+      label: "Version"
       description: "Please paste the output of `qtile --version` here."
     validations:
       required: true
   - type: dropdown
     attributes:
-      label: "Qtile backend"
+      label: "Backend"
       description: "On which backend(s) does the issue occur?"
       multiple: true
       options:
