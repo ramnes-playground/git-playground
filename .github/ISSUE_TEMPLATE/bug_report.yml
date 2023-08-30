@@ -18,14 +18,12 @@ body:
         2. do action B
         3. observe issue
     validations:
-      render: markdown
       required: true
   - type: input
     attributes:
       label: "Qtile version"
       description: "Please paste the output of `qtile --version` here."
     validations:
-      render: text
       required: true
   - type: dropdown
     attributes:
@@ -41,11 +39,9 @@ body:
     attributes:
       label: "Config"
       description: "If relevant, paste your `~/.config/qtile/config.py` here."
-    validations:
-      render: text
+      render: python
   - type: textarea
     attributes:
       label: "Logs"
       description: "You can paste **relevant logs** from `~/.local/share/qtile/qtile.log` here."
-    validations:
-      render: python
+      render: text
