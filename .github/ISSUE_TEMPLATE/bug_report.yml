@@ -8,7 +8,7 @@ body:
        Hey there, thank you for taking the time to submit this issue!
        
        Please note that this tracker is only for bugs or other issues with the core project.
-       
+
        > **Note**
        > Have you searched past issues to see if this bug has already been reported? If not, please do so first.
   - type: textarea
@@ -38,6 +38,8 @@ body:
       options:
         - "X11 (default)"
         - "Wayland (experimental)"
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: "Config"
