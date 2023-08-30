@@ -4,12 +4,11 @@ labels: ["unconfirmed"]
 body:
   - type: markdown
     attributes:
-     value: "Hey there, thank you for taking the time to submit this issue!"
+     value: "Hey there, thank you for taking the time to submit this issue! Please note that this tracker is only for bugs or other issues with the core project."
   - type: textarea
     attributes:
       label: "The issue"
-      description: |
-        If you can reproduce the issue deterministically, write a step-by-step guide. It would really help anyone who's willing to investigate.
+      description: "Describe your issue in details here. If you can reproduce the issue deterministically, please write a step-by-step guide."
       placeholder: |      
         I tried to do X, but Y happened, and I expected Z. I think this is a bug.
 
@@ -45,3 +44,11 @@ body:
       label: "Logs"
       description: "You can paste **relevant logs** from `~/.local/share/qtile/qtile.log` here."
       render: text
+  - type: checkboxes
+    attributes:
+      label: "Required"
+      options:
+        - label: "I have searched past issues to see if this bug has already been reported."
+          required: true
+        - label: "I've done my very best to help anyone willing to volunteer their time to investigate this problem."
+          required: true
