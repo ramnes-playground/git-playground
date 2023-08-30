@@ -12,7 +12,7 @@ body:
     attributes:
       label: "Issue description"
       description: "Describe your issue in details here. If you can reproduce the issue deterministically, please write a step-by-step guide."
-      placeholder: |      
+      placeholder: |
         I tried to do X, but Y happened, and I expected Z. I think this is a bug.
 
         Here are the steps to reproduce:
