@@ -1,0 +1,47 @@
+name: "Report an issue"
+description: "Our tracker for bugs and other issues with the core project"
+labels: ["unconfirmed"]
+body:
+  - type: markdown
+    attributes:
+     value: |
+       Hey, and thank you for taking the time to submit this issue!
+       
+       Please note that this tracker is only for bugs or other issues with the core project.
+
+       > :warning: **Have you searched past issues to see if this bug has already been reported? If not, please do so first.**
+  - type: textarea
+    attributes:
+      label: "The issue"
+      description: |
+        If you can reproduce the issue deterministically, please write a step-by-step guide.
+        
+        That would really help anyone that's willing to investigate.
+      value: I wanted to do X, but Y happened, and I expected Z. I think this is a bug.
+    validations:
+      render: markdown
+      required: true
+  - type: input
+    attributes:
+      label: "Qtile version"
+      description: "Please paste the output of `qtile --version` here."
+  - type: textarea
+    attributes:
+      label: "Config"
+      description: |
+        If you have relevant lines in your logs, please include them here.
+        
+        Logs can be found here: `~/.local/share/qtile/qtile.log`.
+      value: I wanted to do X, but Y happened, and I expected Z. I think this is a bug.
+    validations:
+      render: text
+  - type: textarea
+    attributes:
+      label: "Logs"
+      description: |
+        If you have relevant lines in your logs, please include them here.
+        
+        Logs can be found here: `~/.local/share/qtile/qtile.log`.
+      value: I wanted to do X, but Y happened, and I expected Z. I think this is a bug.
+    validations:
+      render: text
