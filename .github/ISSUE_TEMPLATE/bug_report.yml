@@ -4,20 +4,12 @@ labels: ["unconfirmed"]
 body:
   - type: markdown
     attributes:
-     value: |
-       Hey there, thank you for taking the time to submit this issue!
-       
-       Please note that this tracker is only for bugs or other issues with the core project.
-
-       > [!NOTE]
-       > Have you searched past issues to see if this bug has already been reported? If not, please do so first.
+     value: "Hey there, thank you for taking the time to submit this issue!"
   - type: textarea
     attributes:
       label: "The issue"
       description: |
-        If you can reproduce the issue deterministically, please write a step-by-step guide.
-        
-        That would really help anyone that's willing to investigate.
+        If you can reproduce the issue deterministically, write a step-by-step guide. It would really help anyone who's willing to investigate.
       placeholder: |      
         I tried to do X, but Y happened, and I expected Z. I think this is a bug.
 
@@ -44,19 +36,12 @@ body:
   - type: textarea
     attributes:
       label: "Config"
-      description: |
-        If you have relevant lines in your logs, please include them here.
-        
-        Logs can be found here: `~/.local/share/qtile/qtile.log`.
+      description: "If relevant, paste your `~/.config/qtile/config.py` here."
     validations:
       render: text
   - type: textarea
     attributes:
       label: "Logs"
-      description: |
-        If you have relevant lines in your logs, please include them here.
-        
-        Logs can be found here: `~/.local/share/qtile/qtile.log`.
-      placeholder: I wanted to do X, but Y happened, and I expected Z. I think this is a bug.
+      description: "You can paste **relevant logs** from `~/.local/share/qtile/qtile.log` here."
     validations:
       render: python
