@@ -35,6 +35,7 @@ body:
   - type: dropdown
     attributes:
       label: "Qtile backend"
+      description: "What backend are you running?"
       options:
         - "X11 (default)"
         - "Wayland (experimental)"
@@ -47,7 +48,6 @@ body:
         If you have relevant lines in your logs, please include them here.
         
         Logs can be found here: `~/.local/share/qtile/qtile.log`.
-      value: I wanted to do X, but Y happened, and I expected Z. I think this is a bug.
     validations:
       render: text
   - type: textarea
@@ -59,4 +59,4 @@ body:
         Logs can be found here: `~/.local/share/qtile/qtile.log`.
       placeholder: I wanted to do X, but Y happened, and I expected Z. I think this is a bug.
     validations:
-      render: text
+      render: python
