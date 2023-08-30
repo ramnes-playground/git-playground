@@ -30,7 +30,8 @@ body:
   - type: dropdown
     attributes:
       label: "Qtile backend"
-      description: "What backend are you running?"
+      description: "On which backend(s) does the issue occur?"
+      multiple: true
       options:
         - "X11 (default)"
         - "Wayland (experimental)"
